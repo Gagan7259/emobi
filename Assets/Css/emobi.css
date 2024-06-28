@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.bg-clr {
+    background-color: #181818;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: transparent;
+    /* Adjust this if needed */
+}
+
+.ditem {
+    background-color: rgba(0, 0, 0, 0.56);
+    color: #A8A8A7;
+}
+
+.space {
+    margin: 0 70px;
+}
+
+.homesection {
+    position: relative;
+}
+
+.homevideo {
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    background-color: rgba(176, 14, 14, 0.1);
+
+}
+
+.homecontent {
+    color: aliceblue;
+    position: absolute;
+    top: 10%;
+    margin-left: 10%;
+}
+
+.bannername {
+    padding: 20px;
+    font-size: 3rem;
+}
+
+.bannername>span {
+    color: red;
+}
+
+.info {
+    margin-left: 29px;
+}
+
+/* 1st block  */
+.pattern {
+    width: 100%;
+}
+
+.firstblock {
+    position: relative;
+}
+
+.firstblock-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+}
+
+.kyari {
+    font-size: 5rem;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.about-title span {
+    -webkit-text-stroke: .1vw #f7f7fe;
+    position: relative;
+}
+
+.about-title span:before {
+    -webkit-text-stroke: 0 #fe0001;
+    -webkit-animation: animate 6s linear infinite;
+    animation: animate 6s linear infinite;
+    border-right: 2px solid #fe0001;
+    color: #fe0001;
+    content: attr(data-text);
+    height: 70%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 19 px;
+    width: 0;
+}
+
+.kyari-text:after {
+    background-color: #fe0001;
+    content: "";
+    height: 6px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 20px;
+    z-index: 10;
+}
+
+@keyframes animate {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+.para {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    line-height: 26px;
+    padding: 0 4.5rem;
+}
+
+
+.para::before {
+    content: "";
+    position: absolute;
+    height: 70vh;
+    margin-left: -200px;
+    margin-top: -80px;
+    border-left: 1px solid #C9C9C9;
+}
+
+
+/* 2nd block */
+.secondblock-backgrounbd {
+    width: 100%;
+    height: 100%;
+
+}
+
+.key {
+    top: 20%;
+    left: 6%;
+
+}
+
+.keycontent {
+    display: block;
+    list-style: none;
+    color: #fffFFF;
+
+
+}
+
+.keypara {
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+.keycontent li h3>span {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+small {
+    padding-left: 3px;
+}
+
+.listleft {
+    position: relative;
+    animation: fadeleft 1s;
+}
+
+.listleft:nth-child(1) {
+    animation-delay: 0.5s;
+    /* Delay for the first element */
+}
+
+.listleft:nth-child(2) {
+    animation-delay: 1s;
+    /* Delay for the second element */
+}
+
+.listleft:nth-child(3) {
+    animation-delay: 1.5s;
+    /* Delay for the third element */
+}
+
+
+
+@keyframes fadeleft {
+    0% {
+        opacity: 0;
+        display: none;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+.listleft::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 30px;
+    /* Adjust this value to move the border down */
+    height: 90px;
+    /* Set the desired height of the border */
+    border-left: 4px solid #fe0001;
+    /* Set the border style */
+}
+
+
+/* 3rd Block */
+.thirdblock {
+    position: relative;
+    margin: 0 30px;
+}
+
+.thirdblock-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 40%;
+}
+
+.activ {
+    color: #333;
+    font-size: 4.063rem;
+    font-weight: 800;
+    line-height: 5.5rem;
+}
+
+.para1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    line-height: 26px;
+    padding: 0 4.5rem;
+}
+
+.para1::before {
+    content: "";
+    position: absolute;
+    height: 70vh;
+    margin-left: -100px;
+    margin-top: -80px;
+    border-left: 1px solid #C9C9C9;
+
+}
+
+.para1>span {
+    display: block;
+    margin-top: 20px;
+}
+
+.pattern1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
