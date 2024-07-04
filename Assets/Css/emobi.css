@@ -8,6 +8,7 @@
 
 body {
     overflow-x: hidden;
+    font-family: Poppins, sans-serif, Open Sans;
 }
 
 .bg-clr {
@@ -291,4 +292,43 @@ small {
     top: 0;
     left: 0;
 
+}
+
+
+/* product section */
+
+.product {
+    background-image: url('../images/bg-bike.jpg');
+    height: 101vh;
+    background-position: 100%;
+    background-size: cover;
+    padding: 12rem 0 6rem;
+    position: relative;
+}
+
+.key-points {
+    color: white;
+    list-style: none;
+    position: absolute;
+    top: 10%;
+    padding-left: 3rem;
+}
+
+.key-points li::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 75px;
+    border-left: 4px solid red;
+    left: 10px;
+    top: 25px;
+}
+
+.key-points li {
+    margin-bottom: 3rem;
+}
+
+.key-points li h3 span {
+    font-size: 4rem;
+    font-weight: 800;
 }
